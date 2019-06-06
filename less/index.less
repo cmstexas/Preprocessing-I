@@ -57,3 +57,231 @@ html, body {
     height: 100%;
 }
 
+//less 
+
+.defaultborder {
+	padding: 2rem;
+	border: 1px solid black;
+}
+
+.defaulthighlighttext {
+	font-weight: bold;
+	color: black;
+}
+
+.defaultsection {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.defaultbutton {
+	background-color:#7892c2;
+	-moz-border-radius:21px;
+	-webkit-border-radius:21px;
+	border-radius:21px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:15px;
+	font-weight:bold;
+	padding:15px 40px;
+	text-decoration:none;
+	text-shadow:0px 1px 7px #283966;
+}
+
+@h1size: 4rem;
+@h2size: 3rem;
+@h3size: 2rem;
+@h4size: 1.8rem;
+@h5size: 1rem;
+
+//regular css
+
+//NAV SECTION//
+
+nav {
+ display:flex;
+ justify-content: space-evenly;
+ margin-top: 3rem;
+}
+
+	.navmenu {
+		color: black;
+	}
+
+	.logo {
+		margin-top: -6rem;
+		margin-right: 3rem;
+	}
+
+
+//HEADER SECTION//
+
+header{
+	display:flex;
+	justify-content: center;
+	padding-bottom: 3rem;
+
+	.headertext{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 3rem;
+
+	}
+
+	h1{
+		font-size: @h1size;
+		margin-bottom: .5rem;
+	}
+
+	h4{
+		font-size: @h4size;
+		margin-bottom: .5rem;
+	}
+
+	p{
+		width: 50%;
+		margin-bottom: .5rem;
+	}
+
+	.workwithcms {
+		.defaultbutton();
+	}
+	
+	.workwithcms:hover {
+		background-color:#476e9e;
+	}
+	
+	.workwithcms:active {
+		position:relative;
+		top:2px;
+	}
+}
+
+//project header//
+
+h2{
+	font-size: @h2size;
+	display: flex;
+	justify-content: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+//PROJECT SECTION//
+
+.skills1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+	h4{
+		font-size: @h4size;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+		.defaulthighlighttext();
+
+	}
+
+	ul{
+		display: flex;
+		flex-direction: column;
+		list-style-type: square;
+
+	}
+
+	.githubbutton{
+		.defaultbutton();
+		display: flex;
+		margin-left: 27rem;
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+
+
+//BIO SECTION//
+
+.biosection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+	padding: 5rem;
+}
+
+	.bioheader{
+		margin-top: -5rem;
+		margin-bottom: 10rem;
+	}
+
+	.biocontent{
+		width: 50%;
+	}
+
+	h3{
+		font-size: @h3size;
+		margin-bottom: 2rem;
+		.defaulthighlighttext();
+	}
+
+ 
+//EDUCATION SECTION//
+
+.educationsection {
+	display: flex;
+	justify-content: space-between;
+	margin-top: .3rem;
+	margin-bottom: 4rem;
+	padding: 5rem;
+}
+
+	.educontent {
+		margin-left: 3rem;
+	}
+
+	.education {
+		margin-top: 1rem;
+	}
+
+	.eduimage{
+		margin-top: -3rem;
+	}
+
+	.eduheader{
+		margin-bottom: 3rem;
+		.defaulthighlighttext();
+	}
+
+	h3{
+		font-size: @h3size;
+		margin-bottom: 2rem;
+	}
+
+	eheader{
+		margin-bottom: 3rem;
+	}
+
+
+//closing button//
+
+.closingbutton{
+	.defaultbutton();
+	display: flex;
+	margin-left: 30rem;
+	margin-top: -3rem;
+}
+//FOOTER SECTION//
+
+footer{
+	font-size: @h5size;
+	margin-top: 3rem;
+	margin-left: 26rem;
+	padding: 3rem;
+}
+
